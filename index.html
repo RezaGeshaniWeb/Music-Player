@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Radio Javan</title>
+    <link rel="icon" href="img/RJ.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-[#1c1917] font-vazir select-none">
+    <figure class="flex justify-center w-full py-4 xl:hidden">
+        <img src="img/logo.png" alt="logo" class="w-[150px]">
+    </figure>
+    <main class="w-full 2xl:container 2xl:mx-auto flex justify-center relative px-5">
+        <aside
+            class="hidden xl:flex xl:flex-col xl:items-center xl:w-[260px] xl:h-[460px] xl:border xl:border-gray-500 bg-transparent xl:border-opacity-40 xl:rounded-3xl lg:fixed lg:top-7 lg:right-7 p-4">
+            <img src="img/logo.png" class="w-[80%] mb-4" alt="">
+            <div class="w-[90%] h-11 bg-[#242220] rounded-full flex overflow-hidden mb-4">
+                <span class="w-[20%] flex justify-center items-center pt-1"><i
+                        class="bi bi-search text-slate-500"></i></span>
+                <input type="text" placeholder="جستجو..." spellcheck="false" autocomplete="off"
+                    class="w-[80%] block border-0 outline-0 text-slate-200 bg-transparent text-sm">
+            </div>
+            <ul
+                class="w-[90%] pr-2 flex flex-col gap-3 *:text-white *:text-opacity-50 *:flex *:items-center *:gap-[10px] *:text-sm *:cursor-pointer">
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-house text-xl"></i>صفحه اصلی
+                </li>
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-grid text-xl"></i>مرور
+                </li>
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-music-note text-xl"></i>موزیک
+                </li>
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-music-note-list text-xl"></i>آلبوم
+                </li>
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-music-note text-xl"></i>ریمیکس
+                </li>
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-cassette text-xl"></i>پادکست
+                </li>
+                <li class="hover:text-opacity-100 transition-all duration-200">
+                    <i class="bi bi-camera-video text-xl"></i>موزیک ویدیو
+                </li>
+                <div class="w-[100%] h-[1px] bg-gray-500 bg-opacity-40 mt-3"></div>
+            </ul>
+        </aside>
+        <section class="w-full flex flex-col items-center xl:items-end xl:pl-10">
+            <section
+                class="w-full xl:w-[77%] flex overflow-hidden xl:mt-7 gap-7 *:min-w-[100%] sm:*:min-w-[48%] *:h-64 xl:*:h-[300px] *:relative *:cursor-pointer mb-16"
+                id="header-music">
+                <!-- header-music -->
+            </section>
+            <section class="w-full xl:w-[77%] flex flex-col gap-4 *:cursor-pointer *:rounded-xl mb-10">
+                <img src="img/RJ.jpg" alt="">
+                <img src="img/tabligh.jpg" alt="">
+            </section>
+            <section class="w-full flex flex-col mb-12 items-center xl:items-end">
+                <h3 class="text-white text-opacity-80 text-end font-semibold text-lg mb-5">RJ Exclusive</h3>
+                <section id="body-sec1"
+                    class="w-full xl:w-[77%] flex justify-center flex-wrap gap-5 *:w-[45%] sm:*:w-[30%] md:*:w-[23%] lg:*:w-[18%] *:mb-1 *:cursor-pointer">
+                    <!-- body-sec1 -->
+                </section>
+            </section>
+            <section class="w-full flex flex-col mb-12 items-center xl:items-end">
+                <h3 class="text-white text-opacity-80 text-end font-semibold text-lg mb-5">New Music</h3>
+                <section id="body-sec2"
+                    class="w-full xl:w-[77%] flex justify-center flex-wrap gap-5 *:w-[45%] sm:*:w-[30%] md:*:w-[23%] lg:*:w-[18%] *:mb-1 *:cursor-pointer">
+                    <!-- body-sec2 -->
+                </section>
+            </section>
+            <section class="w-full flex flex-col mb-14 xl:mb-28 items-center xl:items-end">
+                <h3 class="text-white text-opacity-80 text-end font-semibold text-lg mb-5">Mohsen Yeganeh Archive</h3>
+                <section id="body-sec3"
+                    class="w-full xl:w-[77%] flex justify-center flex-wrap gap-5 *:w-[45%] sm:*:w-[30%] md:*:w-[23%] lg:*:w-[18%] *:mb-1 *:cursor-pointer">
+                    <!-- body-sec3 -->
+                </section>
+            </section>
+            <footer class="w-full xl:w-[77%] flex flex-col xl:items-end pb-28">
+                <div class="w-[100%] h-[1px] bg-gray-500 bg-opacity-40 mt-3"></div>
+                <div class="flex flex-row-reverse items-center justify-between w-full px-2 gap-2 mt-7">
+                    <p class="text-white text-opacity-80 text-end mt-2" dir="ltr">© 2024 • This is a demo from
+                        <strong>Radio Javan - Music Player</strong> • Coded by <strong>Reza Geshani</strong>
+                    </p>
+                    <img src="img/logo-footer.png" alt="logo-footer">
+                </div>
+                <div class="my-6 flex flex-row-reverse text-white px-2">
+                    <i class="bi bi-telephone-fill text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="tel:09934774358">09934774358</a>
+                </div>
+                <div class="mb-6 flex flex-row-reverse text-white px-2">
+                    <i class="bi bi-linkedin text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="https://www.linkedin.com/in/reza-geshani-web">reza-geshani-web</a>
+                </div>
+                <div class="mb-6 flex flex-row-reverse text-white px-2">
+                    <i class="bi bi-instagram text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="https://www.instagram.com/rezageshani_web" dir="ltr">@rezageshani_web</a>
+                </div>
+                <div class="mb-6 flex flex-row-reverse text-white px-2">
+                    <i class="bi bi-github text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="https://github.com/RezaGeshaniWeb/">RezaGeshaniWeb</a>
+                </div>
+            </footer>
+            <div class="w-[90%] h-[85px] bg-[#33302fd7] border border-gray-400 border-opacity-40 fixed bottom-5 left-[5%] rounded-3xl flex justify-center items-center *:text-white px-7 flex-wrap"
+                id="audio-play">
+                <!-- show play fixed -->
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
