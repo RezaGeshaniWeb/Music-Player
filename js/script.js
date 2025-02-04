@@ -322,7 +322,7 @@ function setMusicSec3() {
 // setToPlay
 function setToPlay(e) {
     let selectedMusic = musicArray.find(m => m.id == e.target.parentElement.dataset.id)
-    showPlay(selectedMusic)
+    showPlay(selectedMusic, true)
 }
 // setToPlay
 
